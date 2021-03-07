@@ -4,8 +4,8 @@
 # SPDX-License-Identifer: Apache-2.0
 #
 
-# Inherit some common ancientOS stuff.
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -14,13 +14,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official-ify
-ANCIENT_OFFICIAL=true
+#EVO_BUILD_TYPE := OFFICIAL
+#EVO_MAINTAINER := Mxlfunction
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := RMX1971
-PRODUCT_NAME := ancient_RMX1971
+PRODUCT_NAME := evolution_RMX1971
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := Realme 5 Pro
+PRODUCT_MODEL := 5 Pro
 PRODUCT_MANUFACTURER := Realme
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
